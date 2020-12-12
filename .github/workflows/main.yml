@@ -44,4 +44,6 @@ jobs:
         env:
            GH_TOKEN: ${{ secrets.GH_TOKEN }}
            GIT_USER: ${{ secrets.GH_USER }}
+           CURRENT_BRANCH: master,
+           USE_SSH: true
 
