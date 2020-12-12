@@ -71,4 +71,4 @@ jobs:
           else
           npm i
           fi
-          npx docusaurus deploy
+          cd website && npx docusaurus deploy
