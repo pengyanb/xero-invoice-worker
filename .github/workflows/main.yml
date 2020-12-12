@@ -40,7 +40,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN  }}
         
       - name: doc publish
-        run: cd website && npm install && npm run build && publish-gh-pages
+        run: cd website && npm install && npm run build && npm run publish-gh-pages
         env:
           GIT_USER: pengyanb
 
