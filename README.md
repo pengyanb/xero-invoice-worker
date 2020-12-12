@@ -2,8 +2,8 @@
 
 ## npm commands
 
-- **npm start**, start the invoice work server
-- **npm run start:dev**, run dev server with the source code
+- **npm start**, start the invoice work server. Run this commmand with the package installed from npm. 
+- **npm run start:dev**, start the dev server. Run this command with the source code.
 - **npm run build**, build the server and output the files to **dist** folder
 - **clean**, remove the **dist** folder
 - **npm run doc**, to build and documentation page
@@ -24,3 +24,7 @@
 A mock server for feeding the stub invoices events and can be used for local development.
 
 Endpoint url: http://localhost:9001/invoices/events?pageSize=10&afterEventId=0
+
+## Documentation
+
+https://pengyanb.github.io/xero-invoice-worker-doc-gh-pages/
