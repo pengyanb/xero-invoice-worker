@@ -1,0 +1,17 @@
+{
+  "Xero Invoice Worker": {
+    "Basic": [
+      "overview",
+      "how-to-use"
+    ],
+    "CICD": [
+      "build-pipeline"
+    ],
+    "Documents": [
+      "how-to-doc"
+    ],
+    "Improvements": [
+      "to-dos"
+    ]
+  }
+}

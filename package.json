@@ -9,7 +9,8 @@
     "build": "npm run clean && tsc",
     "postbuild": "npm run copyfilesToDist",
     "copyfilesToDist": "copyfiles package.json package-lock.json README.md dist",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "doc": "cd website && npm start"
   },
   "author": "Peng Yanbing <info@implicitcast.com> (http://implicitcast.com)",
   "license": "ISC",

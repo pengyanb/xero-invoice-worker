@@ -1,4 +1,8 @@
-# Xero Invoice Worker
+---
+id: how-to-use
+title: How to use
+sidebar_label: How to use
+---
 
 ## npm commands
 
@@ -6,7 +10,6 @@
 - **npm run start:dev**, run dev server with the source code
 - **npm run build**, build the server and output the files to **dist** folder
 - **clean**, remove the **dist** folder
-- **npm run doc**, to build and documentation page
 
 ## Server Options
 
