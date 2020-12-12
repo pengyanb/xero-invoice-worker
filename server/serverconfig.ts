@@ -17,7 +17,7 @@ interface IUserConfig {
 
 const getServerConfig: (config: IUserConfig) => IServerConfig = (config: IUserConfig) => ({
   "port": config.port || 9000,
-  useLocalMockServer: config.useLocalMockServer || true,
+  "useLocalMockServer": config.useLocalMockServer || true,
   "mockServerPort": config.mockServerPort || 9001,
   "feedUrl": config.feedUrl || config["feed-url"] || `http://localhost:${config.mockServerPort || 9001}/invoices/events`,
   "invoiceDir": config.invoiceDir || config["invoice-dir"] || path.resolve(__dirname, "../invoiceDir"),

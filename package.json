@@ -4,7 +4,8 @@
   "description": "xero invoice worker",
   "main": "dist/index.js",
   "scripts": {
-    "start": "cross-env DEBUG=server*,mock:* ts-node server/index.ts",
+    "start:dev": "cross-env DEBUG=server*,mock:* ts-node ./server/index.ts",
+    "start": "cross-env DEBUG=server*,mock:* node ./server/index.js",
     "build": "npm run clean && tsc",
     "postbuild": "npm run copyfilesToDist",
     "copyfilesToDist": "copyfiles package.json package-lock.json README.md dist",
