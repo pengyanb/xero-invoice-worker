@@ -42,5 +42,5 @@ jobs:
       - name: doc publish
         run: cd website && npm run build && publish-gh-pages
         env:
-          GIT_USER=pengyanb
+          GIT_USER: pengyanb
 
