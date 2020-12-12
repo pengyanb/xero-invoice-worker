@@ -43,4 +43,5 @@ jobs:
         run: cd website && npm install && npm run build && npm run publish-gh-pages
         env:
            GH_TOKEN: ${{ secrets.GH_TOKEN }}
+           GIT_USER: ${{ secrets.GH_USER }}
 
