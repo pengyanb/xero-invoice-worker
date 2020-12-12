@@ -4,9 +4,11 @@
   "description": "xero invoice worker",
   "main": "dist/index.js",
   "scripts": {
-    "tsc": "tsc",
     "start": "cross-env DEBUG=server*,mock:* ts-node server/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && tsc",
+    "postbuild": "npm run copyfilesToDist",
+    "copyfilesToDist": "copyfiles package.json package-lock.json README.md dist",
+    "clean": "rimraf dist"
   },
   "author": "Peng Yanbing <info@implicitcast.com> (http://implicitcast.com)",
   "license": "ISC",
@@ -30,7 +32,9 @@
     "@types/cron": "^1.7.2",
     "@types/pdfkit": "^0.10.6",
     "@types/uuid": "^8.3.0",
+    "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.2"
   }
